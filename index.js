@@ -13,39 +13,24 @@ if (result == 'сложить') {
 } */
 
 //задание со *
-var firstNumber = Number(prompt('Введите 1 число'));
-var secondNumber = Number(prompt('Введите 2 число'));
-var thirdNumber = Number(prompt('Введите 3 число'));
+var firstNumber = (prompt('Введите 1 число'));
+var secondNumber = (prompt('Введите 2 число'));
+var thirdNumber = (prompt('Введите 3 число'));
 
-if (firstNumber == '') {
-    firstNumber = Number(prompt('Введите 1 число еще раз'));
-}
+if (firstNumber === '') {
+    firstNumber = Number(prompt('Введите  число еще раз'));
 
-if (secondNumber == '') {
-    secondNumber = Number(prompt('Введите 2 число еще раз'));
-}
+} else if (secondNumber === '') {
+    secondNumber = Number(prompt('Введите  число еще раз'));
 
-if (thirdNumber == '') {
-    thirdNumber = Number(prompt('Введите 3 число еще раз'));
-}
+} else if (thirdNumber === '') {
+    thirdNumber = Number(prompt('Введите  число еще раз'));
 
-if (firstNumber, secondNumber, thirdNumber == '') {
+} else if (firstNumber === '' && secondNumber === '' && thirdNumber === '') {
     alert('Пока');
-}
-
-
-if (firstNumber, secondNumber, thirdNumber == null) {
+} else if (firstNumber === null || secondNumber === null || thirdNumber === null) {
     var text = prompt('Почему вы отменили?');
-}
-if (text) {
-    alert(`Я понял вашу причину "${text}", всего доброго...`)
-}
-if (firstNumber == NaN) {
-    alert('Были введены некорректные данные')
-}
-if (secondNumber == NaN) {
-    alert('Были введены некорректные данные')
-}
-if (thirdNumber == NaN) {
-    alert('Были введены некорректные данные')
+    alert(`Я понял вашу причину "${text}", всего доброго...`);
+} else if (Number(firstNumber) === NaN && Number(secondNumber) === NaN && Number(thirdNumber) === NaN) {
+    alert('Были введены некорректные данные');
 }
