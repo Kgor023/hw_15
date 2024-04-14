@@ -34,3 +34,4 @@ if (firstNumber === '') {
 } else if (Number(firstNumber) === NaN && Number(secondNumber) === NaN && Number(thirdNumber) === NaN) {
     alert('Были введены некорректные данные');
 }
+
